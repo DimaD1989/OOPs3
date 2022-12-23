@@ -28,7 +28,9 @@ public class LinkedController<E> implements Linked<E>,Iterable<E>, DescendingIte
         size++;
 
     }
-
+    public LinkedController<E> add(E e){
+        return this;
+    }
     @Override
     public int size() {
         return size;
